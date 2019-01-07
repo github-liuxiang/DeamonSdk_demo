@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="polylink.sdk.pl">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:name="polylink.sdk.pl.c.service.BaseService"
+            android:process=":pushservice"></service>
+        <receiver android:name="polylink.sdk.pl.c.receiver.PLReceiver_h"
+            android:process=":pushservice"></receiver>
+    </application>
+
+</manifest>
